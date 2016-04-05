@@ -43,6 +43,7 @@ h3 {
 
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 90vw; }
+.content{ margin: 0 auto; width: 100vw;}
 .clear { clear: both; }
 a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Garamond"; text-decoration: none; margin: 7px 11px; }
 a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Garamond"; text-decoration: none; margin: 7px 11px; }
@@ -94,6 +95,10 @@ a.rpanel:hover{ color: #fff; }
 }
     
  .copy_container { width: 600px; margin: 0 auto; }
+
+ .copy_container_right { width: 600px; margin: 0 auto;}
+
+ .juxtapose_container {width: 70vw; height: 100vh; margin: 0 auto;}
 
  .map_container { width: 100vw; height:100vh; margin: 0 auto; }
 
