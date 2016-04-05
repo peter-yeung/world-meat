@@ -62,6 +62,9 @@ h3 {
 
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 100vw;}
+.counter {
+	font-size: 60px;
+}
 .clear { clear: both; }
 a.lpanel,a.rpanel {
 	float: left;
@@ -126,10 +129,15 @@ a.lpanel:hover,a.rpanel:hover{ color: #fff; }
   margin: 50px auto;
 }
 
+ .counter { 
+ 	width: 80vw; 
+ 	font-size: 40px; 
+ 	margin: 0 auto; }
+
 .map {
 	font-family: 'Garamond', serif;
   font-weight: normal;
-  font-size: 1.875rem;
+  font-size: 1.875rem;    
   text-align: left;
 }
 
@@ -142,6 +150,9 @@ a.lpanel:hover,a.rpanel:hover{ color: #fff; }
  .thinglink_container {width: 70vw; height: 100vh; margin: 0 auto;}
 
  .map_container { width: 100vw; height:100vh; margin: 0 auto; }
+
+  .counter_container { width: 80vw; margin: 0 auto; }
+
 
 
 /*= BUTTONS
