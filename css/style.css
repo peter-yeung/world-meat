@@ -195,15 +195,16 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-color: #fff;
 	color: #333333;
 	margin: 0 auto;
+	height:100vh;
 	width: 100vw;
-	padding: 200px 0 200px 0;
+	padding: 50px 0 0px 0;
 	box-sizing: border-box;
 }
 
 #slide3{
 	background: url(../img/field.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
-	height: 600px;
+	height: 100vh;
 	width: 100vw;
 	padding: 170px 0 0 0;
 	background-size: cover;
