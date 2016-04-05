@@ -23,6 +23,9 @@ function Counter(parent) {
   // based on 22 million per year / 365.25 = 60232.7
   // http://www.telegraph.co.uk/news/earth/agriculture/10375738/Britain-is-running-out-of-space-to-farm-chickens-warns-poultry-industry.html
   this.numChickenPerDay = 60233;
+  this.numCowsPerDay = 100233;
+  this.numFishPerDay = 200233;
+  this.numLambsPerDay = 20233;
 
 }
 
@@ -51,8 +54,10 @@ Counter.prototype = {
     {
       this.count = 0;
       this.elapsedSeconds++;
-      this.p.innerHTML = "You have been here since: " + this.elapsedSeconds;
-      this.chickenText.innerHTML = this.numChickenPerDay * this.elapsedSeconds + ' chickens have been consumed';
+      this.chickenText.innerHTML = this.numChickenPerDay * this.elapsedSeconds + ' chickens have been consumed ' + 
+      this.numCowsPerDay * this.elapsedSeconds + ' cows have been consumed ' +
+      this.numFishPerDay * this.elapsedSeconds + ' fish have been consumed ' +
+     this.numLambsPerDay * this.elapsedSeconds + ' lambs have been consumed';
     }
     requestAnimationFrame(this.update);
   }
