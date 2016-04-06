@@ -1,14 +1,22 @@
 function Counter(parent) {
 
   this.parent = parent;
-  console.log('par',parent);
   this.element = document.createElement('div');
-  this.element.classList.add('copy')
-  this.p = document.createElement('p');
+  this.element.classList.add('counter');
   this.chickenText = document.createElement('p');
   this.parent.appendChild(this.element);
-  this.element.appendChild(this.p);
+
+  this.chickenText = document.createElement('p');
   this.element.appendChild(this.chickenText);
+
+  this.cowText = document.createElement('p');
+  this.element.appendChild(this.cowText);
+
+  this.fishText = document.createElement('p');
+  this.element.appendChild(this.fishText);
+
+  this.lambText = document.createElement('p');
+  this.element.appendChild(this.lambText);
 
   this.elapsedSeconds = 0;
   this.elapsedMS = 0;
@@ -27,9 +35,24 @@ function Counter(parent) {
   this.numFishPerDay = 200233;
   this.numLambsPerDay = 20233;
 
+  var secsPerDay = 86400;
+
+  this.numChickenPerSec = this.dayToSecs(this.numChickenPerDay);
+  this.numCowsPerSec = this.dayToSecs(this.numCowsPerDay);
+  this.numFishPerSec = this.dayToSecs(this.numFishPerDay);
+  this.numLambsPerSec = this.dayToSecs(this.numLambsPerDay);
+
 }
 
 Counter.prototype = {
+
+  dayToSecs : function (perDay) {
+      var secsPerDay = 86400;
+      var perSec = (perDay / secsPerDay);
+      return (Math.round(perSec * 2) / 2).toFixed(1);
+
+  },
+
   update : function (currentTime) {
 
     this.count++;
@@ -54,10 +77,10 @@ Counter.prototype = {
     {
       this.count = 0;
       this.elapsedSeconds++;
-      this.chickenText.innerHTML = this.numChickenPerDay * this.elapsedSeconds + ' chickens have been consumed ' + 
-      this.numCowsPerDay * this.elapsedSeconds + ' cows have been consumed ' +
-      this.numFishPerDay * this.elapsedSeconds + ' fish have been consumed ' +
-     this.numLambsPerDay * this.elapsedSeconds + ' lambs have been consumed';
+      this.chickenText.innerHTML = this.numChickenPerSec * this.elapsedSeconds + ' chickens have been consumed ';
+      this.cowText.innerHTML = this.numCowsPerSec * this.elapsedSeconds + ' cows have been consumed ';
+      this.fishText.innerHTML = this.numFishPerSec * this.elapsedSeconds + ' fish have been consumed ';
+      this.lambText.innerHTML = this.numLambsPerSec * this.elapsedSeconds + ' lambs have been consumed';
     }
     requestAnimationFrame(this.update);
   }

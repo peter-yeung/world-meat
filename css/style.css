@@ -62,7 +62,13 @@ h3 {
 
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 100vw;}
+
+.counter_container{
+	/* knock youself out :) */
+
+}
 .counter {
+	/* knock youself out :) */
 	font-size: 60px;
 }
 .clear { clear: both; }
@@ -129,15 +135,15 @@ a.lpanel:hover,a.rpanel:hover{ color: #fff; }
   margin: 50px auto;
 }
 
- .counter { 
- 	width: 80vw; 
- 	font-size: 40px; 
+ .counter {
+ 	width: 80vw;
+ 	font-size: 40px;
  	margin: 0 auto; }
 
 .map {
 	font-family: 'Garamond', serif;
   font-weight: normal;
-  font-size: 1.875rem;    
+  font-size: 1.875rem;
   text-align: left;
 }
 
