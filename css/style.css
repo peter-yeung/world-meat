@@ -265,3 +265,94 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	width: 100vw;
 	padding: 200px 0 200px 0;
 }
+
+/* Slider */
+
+/* Desperate to remove focus outline in firefox */
+::-moz-focus-inner {
+  outline:0;
+}
+
+:focus {
+  outline:0;
+}
+
+.interactive-slider {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  vertical-align: top;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.interactive-slider {
+  border-radius: 6px;
+  border: 1px solid #a5a8a8;
+  background: #d3d7d7;
+  height: 1rem;
+	width: 15rem;
+  border-radius: 30px;
+}
+
+.interactive-slider::-moz-range-track {
+  border-radius: 6px;
+  border: 1px solid #a5a8a8;
+  background: #d3d7d7;
+  height: 1rem;
+  border-radius: 30px;
+}
+
+/*
+  Declarations get duplicated because an invalid selector
+  invalidates the entire declaration block
+*/
+
+.interactive-slider::-webkit-slider-thumb {
+  height: 3rem;
+  width: 2rem;
+  border: 1px solid rgba(0,0,0,0.36);
+  border-radius: 6px;
+  /* Is base64 the way to go ? */
+  /* I don't imagine simulating vertical stripes w/ gradients */ background:url("http://db.tt/q5LHtPKx") center center no-repeat #e5e9e8;
+  background-size: 7px 18px;
+  box-shadow: inset 0 1px white;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+
+.interactive-slider::-moz-range-thumb {
+  height: 3rem;
+  width: 2rem;
+  border: 1px solid rgba(0,0,0,0.36);
+  border-radius: 6px; background:url("../img/slider-thumb-bar.svg") center center no-repeat #e5e9e8;
+  background-size: 7px 18px;
+  box-shadow: inset 0 1px white;
+  cursor: pointer;
+}
+
+.range-vertical {
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);
+	transform-origin: left top;
+}
+
+/*
+  Active state
+*/
+
+.interactive-slider:active::-webkit-slider-thumb {
+  border: 1px solid #0940fd;
+  box-shadow: 0 0 0 2px #6fb5f1;
+}
+
+input[type=range]:active::-moz-range-thumb {
+  border: 1px solid #0940fd;
+  box-shadow: 0 0 0 2px #6fb5f1;
+}

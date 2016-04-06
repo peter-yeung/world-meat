@@ -3,6 +3,7 @@ $(document).ready(function() {
   $('a[href*=#]').each(scrollToLink);
 
   var counter = new Counter(document.querySelector('#slide4 .counter_container'))
+  var sliders = new Sliders();
 
   function scrollToLink(){
 
