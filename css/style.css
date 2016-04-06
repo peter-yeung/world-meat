@@ -1,19 +1,6 @@
 /* begin GENERAL STYLING
 --------------------------------------------------------*/
 
-html{
-	font-size: 16px;
-}
-body{
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	/* hacky hack, we gotta find the rogue div that creates the vertical scrollbar */
-	overflow-x: hidden;
-}
-
-/* titles */
-h1,h2,h3,h4,h5,h6{
 	  font-family:"Garamond";
 		text-align: center;
 }
@@ -22,6 +9,7 @@ h1 {
 	font-weight:bold;
 	font-size: 9.375rem;
 	line-height:90%;
+	text-align: center;
 	color: #fff;
 	margin: 0;
 	padding: 0;
