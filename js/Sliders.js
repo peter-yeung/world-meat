@@ -1,6 +1,8 @@
 define(function (require, exports, module)
 {
 
+    var Data = require('../datasets/Data.js')
+
     function Sliders(parent) {
 
       this.resultsText = document.querySelector('.interactive-results')
@@ -30,10 +32,7 @@ define(function (require, exports, module)
 
       updateResults : function () {
 
-        // TODO create data object
-        var numChickenPerDay = 60233;
-        var UKResidents2015 = 64679700;
-        var chickenPerDayPerPerson = numChickenPerDay / UKResidents2015;
+        var chickenPerDayPerPerson = Data.DailyConsumption.chickens / Data.UKResidents;
 
         var result = chickenPerDayPerPerson * this.numDays * this.numPeople;
 

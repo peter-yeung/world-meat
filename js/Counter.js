@@ -1,6 +1,9 @@
 define(function (require, exports, module)
 {
 
+    var Data = require('../datasets/Data');
+
+
     function Counter(parent) {
 
       this.parent = parent;
@@ -31,19 +34,14 @@ define(function (require, exports, module)
       this.update = this.update.bind(this);
       this.update();
 
-      // based on 22 million per year / 365.25 = 60232.7
-      // http://www.telegraph.co.uk/news/earth/agriculture/10375738/Britain-is-running-out-of-space-to-farm-chickens-warns-poultry-industry.html
-      this.numChickenPerDay = 60233;
-      this.numCowsPerDay = 100233;
-      this.numFishPerDay = 200233;
-      this.numLambsPerDay = 20233;
+
 
       var secsPerDay = 86400;
 
-      this.numChickenPerSec = this.dayToSecs(this.numChickenPerDay);
-      this.numCowsPerSec = this.dayToSecs(this.numCowsPerDay);
-      this.numFishPerSec = this.dayToSecs(this.numFishPerDay);
-      this.numLambsPerSec = this.dayToSecs(this.numLambsPerDay);
+      this.numChickenPerSec = this.dayToSecs(Data.DailyConsumption.chickens);
+      this.numCowsPerSec = this.dayToSecs(Data.DailyConsumption.cows);
+      this.numFishPerSec = this.dayToSecs(Data.DailyConsumption.fish);
+      this.numLambsPerSec = this.dayToSecs(Data.DailyConsumption.lambs);
 
     }
 
