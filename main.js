@@ -4,10 +4,10 @@ require.config(
     paths :
     {
         'App'          : 'App',
-        'jQuery'       : require.toUrl("./libs/jquery-2.2.3.min")
+        'jquery'       : require.toUrl("./libs/jquery-2.2.3.min")
     }
 });
 
-require(['App','jQuery'], function (App,jQuery) {
-
+require(['App','jquery'], function (App,jquery) {
+	
 });

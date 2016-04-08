@@ -34,7 +34,7 @@ define(function (require, exports, module)
       this.update = this.update.bind(this);
       this.update();
 
-
+      console.log('WHAT THE HELL JQUERY??')
 
       var secsPerDay = 86400;
 
