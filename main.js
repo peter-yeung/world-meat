@@ -4,7 +4,7 @@ require.config(
     paths :
     {
         'App'          : 'App',
-        'jquery'       : require.toUrl("./libs/jquery-2.2.3.min")
+        'jquery'       : require.toUrl("./libs/jquery-1.10.2.min")
     }
 });
 
