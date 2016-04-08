@@ -1,7 +1,7 @@
 define(function (require, exports, module)
 {
 
-    var Data = require('../datasets/Data.js')
+    var Data = require('../datasets/Data')
 
     function Sliders(parent) {
 
