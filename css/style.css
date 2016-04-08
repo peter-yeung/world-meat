@@ -205,6 +205,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
+	padding: 100px 0 0px 0;
 	background-size: cover;
 }
 
