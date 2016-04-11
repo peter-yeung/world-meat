@@ -62,6 +62,7 @@ h3 {
 
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 100vw;}
+.content_juxtapose{ margin: 0 auto; width: 100vw;}
 
 .counter_container{
 	/* knock youself out :) */
@@ -91,7 +92,7 @@ a.lpanel:hover,a.rpanel:hover{ color: #fff; }
 }
 
 #nav {
-	width: 410px;
+	width: 400px;
 	float: right;
 	margin-top: 20px;
 	box-sizing: border-box;
@@ -137,7 +138,7 @@ a.lpanel:hover,a.rpanel:hover{ color: #fff; }
 
  .counter {
  	width: 80vw;
- 	font-size: 40px;
+ 	font-size: 3rem;
  	margin: 0 auto; }
 
 .map {
@@ -147,17 +148,17 @@ a.lpanel:hover,a.rpanel:hover{ color: #fff; }
   text-align: left;
 }
 
- .copy_container { width: 600px; margin: 0 auto; }
+ .copy_container { width: 50vw; margin: 0 auto; }
 
- .copy_container_right { width: 600px; margin: 0 auto;}
+ .copy_container_right { width: 50vw; margin: 0 auto;}
 
- .juxtapose_container {width: 70vw; height: 100vh; margin: 0 auto;}
+ .juxtapose_container {width: 80vw; height: 100vh; margin: 0 auto;}
 
  .thinglink_container {width: 70vw; height: 100vh; margin: 0 auto;}
 
  .map_container { width: 100vw; height:100vh; margin: 0 auto; }
 
-  .counter_container { width: 80vw; margin: 0 auto; }
+ .counter_container { width: 80vw; margin: 0 auto; }
 
 
 
@@ -205,7 +206,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
-	padding: 100px 0 0px 0;
+	padding: 15vh 0 0px 0;
 	background-size: cover;
 }
 
@@ -215,7 +216,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	margin: 0 auto;
 	height:100vh;
 	width: 100vw;
-	padding: 50px 0 0px 0;
+	padding: 15vh 0 0px 0;
 	box-sizing: border-box;
 }
 
@@ -224,7 +225,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	color: #fff;
 	height: 100vh;
 	width: 100vw;
-	padding: 170px 0 0 0;
+	padding: 100px 0 0 0;
 	background-size: cover;
 	box-sizing: border-box;
 }
@@ -233,7 +234,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-color: #fff;
 	color: #333333;
 	width: 100vw;
-	padding: 200px 0 200px 0;
+	padding: 100px 0 0px 0;
 }
 
 #slide5{
