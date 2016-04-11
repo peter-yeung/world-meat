@@ -78,10 +78,10 @@ define(function (require, exports, module)
         {
           this.count = 0;
           this.elapsedSeconds++;
-          this.chickenText.innerHTML = this.numChickenPerSec * this.elapsedSeconds + ' chickens have been consumed ';
-          this.cowText.innerHTML = this.numCowsPerSec * this.elapsedSeconds + ' cows have been consumed ';
-          this.fishText.innerHTML = this.numFishPerSec * this.elapsedSeconds + ' fish have been consumed ';
-          this.lambText.innerHTML = this.numLambsPerSec * this.elapsedSeconds + ' lambs have been consumed';
+          this.chickenText.innerHTML = this.numChickenPerSec * this.elapsedSeconds + ' chickens ' + this.numCowsPerSec * this.elapsedSeconds + ' cows ' + this.numFishPerSec * this.elapsedSeconds + ' fish ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs';
+          this.cowText.innerHTML = this.numChickenPerSec * this.elapsedSeconds + ' chickens ' + this.numCowsPerSec * this.elapsedSeconds + ' cows ' + this.numFishPerSec * this.elapsedSeconds + ' fish ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs';
+          this.fishText.innerHTML = this.numChickenPerSec * this.elapsedSeconds + ' chickens ' + this.numCowsPerSec * this.elapsedSeconds + ' cows ' + this.numFishPerSec * this.elapsedSeconds + ' fish ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs';
+          this.lambText.innerHTML = this.numChickenPerSec * this.elapsedSeconds + ' chickens ' + this.numCowsPerSec * this.elapsedSeconds + ' cows ' + this.numFishPerSec * this.elapsedSeconds + ' fish ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs ' + this.numLambsPerSec * this.elapsedSeconds + ' lambs';
         }
         requestAnimationFrame(this.update);
       }
