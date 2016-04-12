@@ -54,6 +54,17 @@ h4 {
 	 padding: 50px 0 50px 0;
 }
 
+h5 {
+  font-family: 'Garamond', serif;
+  font-weight: normal;
+  font-size: 1.875rem;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 100px 0;
+  z-index: 1;
+  position: relative;
+}
+
 @media (max-width: 600px){
 		html{
 			font-size: 14px;
@@ -174,7 +185,7 @@ a.lpanel:hover,a.rpanel:hover{ color: #fff; }
 
  .juxtapose_container {width: 80vw; height: 100vh; margin: 0 auto;}
 
- .thinglink_container {width: 70vw; height: 100vh; margin: 0 auto;}
+ .thinglink_container {width: 70vw; height: 80vh; margin: 0 auto;}
 
  .map_container { width: 100vw; height:100vh; margin: 0 auto; }
 
@@ -254,7 +265,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-color: #fff;
 	color: #333333;
 	width: 100vw;
-	padding: 100px 0 0px 0;
+	padding: 100px 0 100px 0;
 }
 
 #slide5{
@@ -263,7 +274,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-size: cover;
 	height:100vh;
 	width: 100vw;
-	padding: 200px 0 200px 0;
+	padding: 100px 0 0px 0;
 }
 
 #slide6{
@@ -276,7 +287,6 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 #slide7{
-	color: #fff;
 	width:100vw;
 }
 
@@ -285,7 +295,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	color: #333333;
 	height: 1000px;
 	width: 100vw;
-	padding: 200px 0 200px 0;
+	padding: 50px 0 50px 0;
 }
 
 /* Slider */
