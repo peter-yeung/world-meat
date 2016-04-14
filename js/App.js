@@ -1,15 +1,21 @@
 define(function (require,exports,module) {
 
-    var $       = require('jquery');
-    var Counter = require('./Counter');
-    var Sliders = require('./Sliders');
+    var $               = require('jquery');
+    var CounterManager  = require('./CounterManager');
+    var Sliders         = require('./Sliders');
 
     // JQUERY FOR SLIDING NAVIGATION
     $(document).ready(function() {
       $('a[href*=#]').each(scrollToLink);
 
-      var counter = new Counter(document.querySelector('#slide4 .counter_container'))
+      var counterManager = new CounterManager(document.querySelector('#slide4 .counter_container'))
       var sliders = new Sliders();
+
+      update();
+
+      function update() {
+        counterManager.update();
+      }
 
       function scrollToLink(){
 

@@ -1,7 +1,7 @@
 /** vim: et:ts=4:sw=4:sts=4
  * @license RequireJS 2.2.0 Copyright jQuery Foundation and other contributors.
  * Released under MIT license, http://github.com/requirejs/requirejs/LICENSE
- *//
+ */
 //Not using strict: uneven strict support in browsers, #392, and causes
 //problems with requirejs.exec()/transpiler plugins that may not be strict.
 /*jslint regexp: true, nomen: true, sloppy: true */
